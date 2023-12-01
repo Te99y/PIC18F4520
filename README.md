@@ -16,4 +16,4 @@
 7. PICkit 4 not Found -> 如果沒有要接PIC4就看project property, hardware tool要選Simulator; 如果要接可能是線沒插好
 8. VDD, VSS, 電壓相關問題 -> 你的電腦可能給的電壓不夠/ 地線,電源線有沒有接反/ 去project property>PICkit4選power target circult from PICkit4
 9. Target Device ID (0x0) is an Invalid Device ID -> 線沒插好
-10. 
+10. 還有其他的問題&解法歡迎分享
