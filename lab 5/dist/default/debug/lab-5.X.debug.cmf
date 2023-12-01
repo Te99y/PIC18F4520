@@ -1,0 +1,385 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/debug/is_square.o
+mytext CODE 0 69A 69A 18 1 2
+$build/default/debug/lcm.o
+mytext CODE 0 602 602 48 1 2
+$dist/default/debug\lab-5.X.debug.o
+cinit CODE 0 6B2 6B2 6 1 2
+idloc IDLOC 5 200000 200000 8 1 1
+text0 CODE 0 676 676 24 1 2
+cstackCOMRAM COMRAM 1 1 1 4 1 1
+smallconst SMALLCONST 0 600 600 2 1 2
+config CONFIG 4 300000 300000 E 1 1
+$C:\Users\teddy\AppData\Local\Temp\xcAsg9s.\driver_tmp_9.o
+idloc IDLOC 5 200000 200000 8 1 1
+init CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 E 1 1
+$build/default/debug/multi_signed.o
+mytext CODE 0 64A 64A 2C 1 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 80-5FF 1
+SFR F80-FFF 1
+BANK0 80-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+CONST 4-5FF 1
+CONST 6B8-7FFF 1
+SMALLCONST 6B8-7FFF 1
+CODE 4-5FF 1
+CODE 6B8-7FFF 1
+BIGRAM 5-5FF 1
+BIGSFR F80-FFF 1
+COMRAM 5-7F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 6B8-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/debug/is_square.o
+69A mytext CODE >7:C:\Users\teddy\MPLABXProjects\lab-5.X\is_square.asm
+69E mytext CODE >8:C:\Users\teddy\MPLABXProjects\lab-5.X\is_square.asm
+6A0 mytext CODE >10:C:\Users\teddy\MPLABXProjects\lab-5.X\is_square.asm
+6A2 mytext CODE >11:C:\Users\teddy\MPLABXProjects\lab-5.X\is_square.asm
+6A4 mytext CODE >12:C:\Users\teddy\MPLABXProjects\lab-5.X\is_square.asm
+6A6 mytext CODE >13:C:\Users\teddy\MPLABXProjects\lab-5.X\is_square.asm
+6A8 mytext CODE >14:C:\Users\teddy\MPLABXProjects\lab-5.X\is_square.asm
+6AA mytext CODE >15:C:\Users\teddy\MPLABXProjects\lab-5.X\is_square.asm
+6AC mytext CODE >16:C:\Users\teddy\MPLABXProjects\lab-5.X\is_square.asm
+6AE mytext CODE >17:C:\Users\teddy\MPLABXProjects\lab-5.X\is_square.asm
+6B0 mytext CODE >18:C:\Users\teddy\MPLABXProjects\lab-5.X\is_square.asm
+$build/default/debug/lcm.o
+602 mytext CODE >7:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+606 mytext CODE >8:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+60A mytext CODE >9:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+60C mytext CODE >10:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+60E mytext CODE >11:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+610 mytext CODE >16:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+612 mytext CODE >17:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+614 mytext CODE >18:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+616 mytext CODE >19:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+618 mytext CODE >21:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+61A mytext CODE >22:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+61C mytext CODE >24:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+61E mytext CODE >25:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+620 mytext CODE >26:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+622 mytext CODE >27:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+624 mytext CODE >29:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+626 mytext CODE >30:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+628 mytext CODE >31:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+62A mytext CODE >33:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+62C mytext CODE >34:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+62E mytext CODE >35:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+630 mytext CODE >36:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+632 mytext CODE >37:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+634 mytext CODE >38:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+636 mytext CODE >39:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+638 mytext CODE >41:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+63A mytext CODE >42:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+63C mytext CODE >43:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+63E mytext CODE >44:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+640 mytext CODE >45:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+642 mytext CODE >46:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+644 mytext CODE >47:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+646 mytext CODE >49:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+648 mytext CODE >50:C:\Users\teddy\MPLABXProjects\lab-5.X\lcm.asm
+$dist/default/debug\lab-5.X.debug.o
+676 text0 CODE >7:C:\Users\teddy\MPLABXProjects\lab-5.X\main.c
+676 text0 CODE >11:C:\Users\teddy\MPLABXProjects\lab-5.X\main.c
+692 text0 CODE >13:C:\Users\teddy\MPLABXProjects\lab-5.X\main.c
+6B2 cinit CODE >397:C:\Users\teddy\AppData\Local\Temp\xcAsg9s.\driver_tmp_1.s
+6B2 cinit CODE >399:C:\Users\teddy\AppData\Local\Temp\xcAsg9s.\driver_tmp_1.s
+6B2 cinit CODE >402:C:\Users\teddy\AppData\Local\Temp\xcAsg9s.\driver_tmp_1.s
+6B2 cinit CODE >408:C:\Users\teddy\AppData\Local\Temp\xcAsg9s.\driver_tmp_1.s
+6B2 cinit CODE >410:C:\Users\teddy\AppData\Local\Temp\xcAsg9s.\driver_tmp_1.s
+6B4 cinit CODE >411:C:\Users\teddy\AppData\Local\Temp\xcAsg9s.\driver_tmp_1.s
+$build/default/debug/multi_signed.o
+64A mytext CODE >7:C:\Users\teddy\MPLABXProjects\lab-5.X\multi_signed.asm
+64E mytext CODE >8:C:\Users\teddy\MPLABXProjects\lab-5.X\multi_signed.asm
+650 mytext CODE >9:C:\Users\teddy\MPLABXProjects\lab-5.X\multi_signed.asm
+654 mytext CODE >10:C:\Users\teddy\MPLABXProjects\lab-5.X\multi_signed.asm
+656 mytext CODE >12:C:\Users\teddy\MPLABXProjects\lab-5.X\multi_signed.asm
+658 mytext CODE >13:C:\Users\teddy\MPLABXProjects\lab-5.X\multi_signed.asm
+65A mytext CODE >14:C:\Users\teddy\MPLABXProjects\lab-5.X\multi_signed.asm
+65C mytext CODE >16:C:\Users\teddy\MPLABXProjects\lab-5.X\multi_signed.asm
+65E mytext CODE >17:C:\Users\teddy\MPLABXProjects\lab-5.X\multi_signed.asm
+660 mytext CODE >18:C:\Users\teddy\MPLABXProjects\lab-5.X\multi_signed.asm
+662 mytext CODE >19:C:\Users\teddy\MPLABXProjects\lab-5.X\multi_signed.asm
+664 mytext CODE >20:C:\Users\teddy\MPLABXProjects\lab-5.X\multi_signed.asm
+666 mytext CODE >21:C:\Users\teddy\MPLABXProjects\lab-5.X\multi_signed.asm
+668 mytext CODE >23:C:\Users\teddy\MPLABXProjects\lab-5.X\multi_signed.asm
+66A mytext CODE >24:C:\Users\teddy\MPLABXProjects\lab-5.X\multi_signed.asm
+66C mytext CODE >25:C:\Users\teddy\MPLABXProjects\lab-5.X\multi_signed.asm
+66E mytext CODE >26:C:\Users\teddy\MPLABXProjects\lab-5.X\multi_signed.asm
+670 mytext CODE >27:C:\Users\teddy\MPLABXProjects\lab-5.X\multi_signed.asm
+672 mytext CODE >28:C:\Users\teddy\MPLABXProjects\lab-5.X\multi_signed.asm
+674 mytext CODE >29:C:\Users\teddy\MPLABXProjects\lab-5.X\multi_signed.asm
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst build/default/debug/lcm.o
+__Hspace_0 6B8 0 ABS 0 - build/default/debug/lcm.o
+__Hspace_1 5 0 ABS 0 - build/default/debug/lcm.o
+__Hspace_2 0 0 ABS 0 - build/default/debug/lcm.o
+__Hspace_3 0 0 ABS 0 - build/default/debug/lcm.o
+__Hspace_4 60000E 0 ABS 0 - build/default/debug/lcm.o
+__Hibigdata 0 0 CODE 0 ibigdata build/default/debug/lcm.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\teddy\AppData\Local\Temp\xcAsg9s.\driver_tmp_9.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data build/default/debug/lcm.o
+__Hudata_bank0 0 0 ABS 0 udata_bank0 build/default/debug/lcm.o
+__Hudata_bank1 0 0 ABS 0 udata_bank1 build/default/debug/lcm.o
+__Hudata_bank2 0 0 ABS 0 udata_bank2 build/default/debug/lcm.o
+__Hudata_bank3 0 0 ABS 0 udata_bank3 build/default/debug/lcm.o
+__Hudata_bank4 0 0 ABS 0 udata_bank4 build/default/debug/lcm.o
+__Hudata_bank5 0 0 ABS 0 udata_bank5 build/default/debug/lcm.o
+__L__absolute__ 0 0 ABS 0 __absolute__ build/default/debug/lcm.o
+__Lsmallconst 600 0 SMALLCONST 0 smallconst build/default/debug/lcm.o
+___sp 0 0 STACK 2 stack C:\Users\teddy\AppData\Local\Temp\xcAsg9s.\driver_tmp_9.o
+_main 676 0 CODE 0 text0 dist/default/debug\lab-5.X.debug.o
+___stack_hi 0 0 STACK 2 stack C:\Users\teddy\AppData\Local\Temp\xcAsg9s.\driver_tmp_9.o
+___stack_lo 0 0 STACK 2 stack C:\Users\teddy\AppData\Local\Temp\xcAsg9s.\driver_tmp_9.o
+start 0 0 CODE 0 init C:\Users\teddy\AppData\Local\Temp\xcAsg9s.\driver_tmp_9.o
+__Hpowerup 0 0 CODE 0 powerup build/default/debug/lcm.o
+__accesstop 80 0 ABS 0 - C:\Users\teddy\AppData\Local\Temp\xcAsg9s.\driver_tmp_9.o
+intlevel0 0 0 CODE 0 text C:\Users\teddy\AppData\Local\Temp\xcAsg9s.\driver_tmp_9.o
+intlevel1 0 0 CODE 0 text C:\Users\teddy\AppData\Local\Temp\xcAsg9s.\driver_tmp_9.o
+intlevel2 0 0 CODE 0 text C:\Users\teddy\AppData\Local\Temp\xcAsg9s.\driver_tmp_9.o
+intlevel3 0 0 CODE 0 text C:\Users\teddy\AppData\Local\Temp\xcAsg9s.\driver_tmp_9.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM build/default/debug/lcm.o
+__Hifardata 0 0 CODE 0 ifardata build/default/debug/lcm.o
+__Hclrtext 0 0 ABS 0 clrtext build/default/debug/lcm.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\teddy\AppData\Local\Temp\xcAsg9s.\driver_tmp_9.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\teddy\AppData\Local\Temp\xcAsg9s.\driver_tmp_9.o
+__Hintcode_body 0 0 ABS 0 intcode_body build/default/debug/lcm.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs build/default/debug/lcm.o
+main@ans 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\lab-5.X.debug.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst build/default/debug/lcm.o
+__Hintcodelo 0 0 CODE 0 intcodelo build/default/debug/lcm.o
+_is_square 69A 0 CODE 0 mytext build/default/debug/is_square.o
+__Lintcodelo 0 0 CODE 0 intcodelo build/default/debug/lcm.o
+start_initialization 6B2 0 CODE 0 cinit dist/default/debug\lab-5.X.debug.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM build/default/debug/lcm.o
+___rparam_used 1 0 ABS 0 - dist/default/debug\lab-5.X.debug.o
+isa$xinst 0 0 ABS 0 - C:\Users\teddy\AppData\Local\Temp\xcAsg9s.\driver_tmp_9.o
+__Hbank0 0 0 ABS 0 bank0 build/default/debug/lcm.o
+__Hbank1 0 0 ABS 0 bank1 build/default/debug/lcm.o
+__Hbank2 0 0 ABS 0 bank2 build/default/debug/lcm.o
+__Hbank3 0 0 ABS 0 bank3 build/default/debug/lcm.o
+__Hbank4 0 0 ABS 0 bank4 build/default/debug/lcm.o
+__Hbank5 0 0 ABS 0 bank5 build/default/debug/lcm.o
+__Hcinit 0 0 ABS 0 cinit build/default/debug/lcm.o
+__Hconst 0 0 CONST 0 const build/default/debug/lcm.o
+__Hedata 0 0 ABS 0 edata build/default/debug/lcm.o
+__Hidata 0 0 CODE 0 idata build/default/debug/lcm.o
+__Hidloc 200008 0 IDLOC 5 idloc build/default/debug/lcm.o
+__Hnvbit 0 0 COMRAM 1 nvbit build/default/debug/lcm.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/debug\lab-5.X.debug.o
+__Hrdata 0 0 COMRAM 1 rdata build/default/debug/lcm.o
+__Hstack 0 0 STACK 2 stack build/default/debug/lcm.o
+__Htext0 0 0 ABS 0 text0 build/default/debug/lcm.o
+__Hudata 0 0 ABS 0 udata build/default/debug/lcm.o
+__Hbigbss 0 0 BIGRAM 1 bigbss build/default/debug/lcm.o
+__Hbigram 0 0 ABS 0 bigram build/default/debug/lcm.o
+__Hbigsfr 0 0 ABS 0 bigsfr build/default/debug/lcm.o
+__smallconst 600 0 SMALLCONST 0 smallconst C:\Users\teddy\AppData\Local\Temp\xcAsg9s.\driver_tmp_9.o
+__Hcomram 0 0 ABS 0 comram build/default/debug/lcm.o
+__Hconfig 30000E 0 CONFIG 4 config build/default/debug/lcm.o
+__Lbank0 0 0 ABS 0 bank0 build/default/debug/lcm.o
+__Lbank1 0 0 ABS 0 bank1 build/default/debug/lcm.o
+__Lbank2 0 0 ABS 0 bank2 build/default/debug/lcm.o
+__Lbank3 0 0 ABS 0 bank3 build/default/debug/lcm.o
+__Lbank4 0 0 ABS 0 bank4 build/default/debug/lcm.o
+__Lbank5 0 0 ABS 0 bank5 build/default/debug/lcm.o
+__Lcinit 0 0 ABS 0 cinit build/default/debug/lcm.o
+__Lconst 0 0 CONST 0 const build/default/debug/lcm.o
+__Ledata 0 0 ABS 0 edata build/default/debug/lcm.o
+__Lidata 0 0 CODE 0 idata build/default/debug/lcm.o
+__Lidloc 0 0 IDLOC 5 idloc build/default/debug/lcm.o
+__Lnvbit 0 0 COMRAM 1 nvbit build/default/debug/lcm.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/debug\lab-5.X.debug.o
+__Lrdata 0 0 COMRAM 1 rdata build/default/debug/lcm.o
+__Lstack 0 0 STACK 2 stack build/default/debug/lcm.o
+__Ltext0 0 0 ABS 0 text0 build/default/debug/lcm.o
+__Ludata 0 0 ABS 0 udata build/default/debug/lcm.o
+__Hfarbss 0 0 FARRAM 0 farbss build/default/debug/lcm.o
+__Lintcode_body 0 0 ABS 0 intcode_body build/default/debug/lcm.o
+__Habs1 0 0 ABS 0 abs1 build/default/debug/lcm.o
+__Hcode 0 0 ABS 0 code build/default/debug/lcm.o
+__Hdata 0 0 ABS 0 data build/default/debug/lcm.o
+__Hheap 0 0 HEAP 7 heap build/default/debug/lcm.o
+__Hinit 4 0 CODE 0 init build/default/debug/lcm.o
+__Hrbit 0 0 COMRAM 1 rbit build/default/debug/lcm.o
+__Hrbss 0 0 COMRAM 1 rbss build/default/debug/lcm.o
+__Htemp 0 0 COMRAM 1 temp build/default/debug/lcm.o
+__Htext 0 0 ABS 0 text build/default/debug/lcm.o
+__Labs1 0 0 ABS 0 abs1 build/default/debug/lcm.o
+__Lcode 0 0 ABS 0 code build/default/debug/lcm.o
+__Ldata 0 0 ABS 0 data build/default/debug/lcm.o
+__Lheap 0 0 HEAP 7 heap build/default/debug/lcm.o
+__Linit 0 0 CODE 0 init build/default/debug/lcm.o
+__Lrbit 0 0 COMRAM 1 rbit build/default/debug/lcm.o
+__Lrbss 0 0 COMRAM 1 rbss build/default/debug/lcm.o
+__Ltemp 0 0 COMRAM 1 temp build/default/debug/lcm.o
+__Ltext 0 0 ABS 0 text build/default/debug/lcm.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM build/default/debug/lcm.o
+__Hintret 0 0 ABS 0 intret build/default/debug/lcm.o
+__Hirdata 0 0 CODE 0 irdata build/default/debug/lcm.o
+__S0 6B8 0 ABS 0 - build/default/debug/lcm.o
+__S1 5 0 ABS 0 - build/default/debug/lcm.o
+__S3 0 0 ABS 0 - build/default/debug/lcm.o
+__S4 0 0 ABS 0 - build/default/debug/lcm.o
+__S5 0 0 ABS 0 - build/default/debug/lcm.o
+_lcm 602 0 CODE 0 mytext build/default/debug/lcm.o
+__Lbigdata 0 0 BIGRAM 1 bigdata build/default/debug/lcm.o
+__Hnvrram 0 0 COMRAM 1 nvrram build/default/debug/lcm.o
+__Lintentry 0 0 ABS 0 intentry build/default/debug/lcm.o
+__Hramtop 600 0 RAM 0 ramtop build/default/debug/lcm.o
+__Hrparam 0 0 COMRAM 1 rparam build/default/debug/lcm.o
+__activetblptr 0 0 ABS 0 - dist/default/debug\lab-5.X.debug.o
+__Hstruct 0 0 COMRAM 1 struct build/default/debug/lcm.o
+__Lbigbss 0 0 BIGRAM 1 bigbss build/default/debug/lcm.o
+__Lbigram 0 0 ABS 0 bigram build/default/debug/lcm.o
+__Lbigsfr 0 0 ABS 0 bigsfr build/default/debug/lcm.o
+__Lcomram 0 0 ABS 0 comram build/default/debug/lcm.o
+__Lconfig 0 0 CONFIG 4 config build/default/debug/lcm.o
+__Lfarbss 0 0 FARRAM 0 farbss build/default/debug/lcm.o
+___inthi_stack_hi 0 0 STACK 2 stack C:\Users\teddy\AppData\Local\Temp\xcAsg9s.\driver_tmp_9.o
+___inthi_stack_lo 0 0 STACK 2 stack C:\Users\teddy\AppData\Local\Temp\xcAsg9s.\driver_tmp_9.o
+__Lfardata 0 0 FARRAM 0 fardata build/default/debug/lcm.o
+isa$std 1 0 ABS 0 - C:\Users\teddy\AppData\Local\Temp\xcAsg9s.\driver_tmp_9.o
+stackhi 0 0 ABS 0 - C:\Users\teddy\AppData\Local\Temp\xcAsg9s.\driver_tmp_9.o
+stacklo 0 0 ABS 0 - C:\Users\teddy\AppData\Local\Temp\xcAsg9s.\driver_tmp_9.o
+__Lintcode 0 0 CODE 0 intcode build/default/debug/lcm.o
+__Lintret 0 0 ABS 0 intret build/default/debug/lcm.o
+__Lirdata 0 0 CODE 0 irdata build/default/debug/lcm.o
+__Lspace_0 0 0 ABS 0 - build/default/debug/lcm.o
+__Lspace_1 0 0 ABS 0 - build/default/debug/lcm.o
+__Lspace_2 0 0 ABS 0 - build/default/debug/lcm.o
+__Lspace_3 0 0 ABS 0 - build/default/debug/lcm.o
+__Lspace_4 0 0 ABS 0 - build/default/debug/lcm.o
+_multi_signed 64A 0 CODE 0 mytext build/default/debug/multi_signed.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM build/default/debug/lcm.o
+end_of_initialization 6B2 0 CODE 0 cinit dist/default/debug\lab-5.X.debug.o
+__Lnvrram 0 0 COMRAM 1 nvrram build/default/debug/lcm.o
+__Hintentry 0 0 ABS 0 intentry build/default/debug/lcm.o
+__Hreset_vec 0 0 CODE 0 reset_vec build/default/debug/lcm.o
+__Lramtop 600 0 RAM 0 ramtop build/default/debug/lcm.o
+__Lrparam 0 0 COMRAM 1 rparam build/default/debug/lcm.o
+__pcinit 6B2 0 CODE 0 cinit dist/default/debug\lab-5.X.debug.o
+__ptext0 676 0 CODE 0 text0 dist/default/debug\lab-5.X.debug.o
+__Lstruct 0 0 COMRAM 1 struct build/default/debug/lcm.o
+__ramtop 600 0 RAM 0 ramtop C:\Users\teddy\AppData\Local\Temp\xcAsg9s.\driver_tmp_9.o
+__Lpowerup 0 0 CODE 0 powerup build/default/debug/lcm.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data build/default/debug/lcm.o
+__Ludata_bank0 0 0 ABS 0 udata_bank0 build/default/debug/lcm.o
+__Ludata_bank1 0 0 ABS 0 udata_bank1 build/default/debug/lcm.o
+__Ludata_bank2 0 0 ABS 0 udata_bank2 build/default/debug/lcm.o
+__Ludata_bank3 0 0 ABS 0 udata_bank3 build/default/debug/lcm.o
+__Ludata_bank4 0 0 ABS 0 udata_bank4 build/default/debug/lcm.o
+__Ludata_bank5 0 0 ABS 0 udata_bank5 build/default/debug/lcm.o
+__H__absolute__ 0 0 ABS 0 __absolute__ build/default/debug/lcm.o
+__psmallconst 600 0 SMALLCONST 0 smallconst dist/default/debug\lab-5.X.debug.o
+__Lreset_vec 0 0 CODE 0 reset_vec build/default/debug/lcm.o
+___heap_hi 0 0 ABS 0 - C:\Users\teddy\AppData\Local\Temp\xcAsg9s.\driver_tmp_9.o
+___heap_lo 0 0 ABS 0 - C:\Users\teddy\AppData\Local\Temp\xcAsg9s.\driver_tmp_9.o
+___param_bank 0 0 ABS 0 - dist/default/debug\lab-5.X.debug.o
+___intlo_stack_hi 0 0 STACK 2 stack C:\Users\teddy\AppData\Local\Temp\xcAsg9s.\driver_tmp_9.o
+___intlo_stack_lo 0 0 STACK 2 stack C:\Users\teddy\AppData\Local\Temp\xcAsg9s.\driver_tmp_9.o
+__Hbigdata 0 0 BIGRAM 1 bigdata build/default/debug/lcm.o
+__end_of__initialization 6B2 0 CODE 0 cinit dist/default/debug\lab-5.X.debug.o
+__Libigdata 0 0 CODE 0 ibigdata build/default/debug/lcm.o
+__Lclrtext 0 0 ABS 0 clrtext build/default/debug/lcm.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\lab-5.X.debug.o
+__end_of_main 69A 0 CODE 0 text0 dist/default/debug\lab-5.X.debug.o
+__Hudata_acs 0 0 ABS 0 udata_acs build/default/debug/lcm.o
+__HRAM 0 0 ABS 0 - build/default/debug/lcm.o
+__Hbss 0 0 RAM 1 bss build/default/debug/lcm.o
+__Hram 0 0 ABS 0 ram build/default/debug/lcm.o
+__Hsfr 0 0 ABS 0 sfr build/default/debug/lcm.o
+__LRAM 1 0 ABS 0 - build/default/debug/lcm.o
+__Lbss 0 0 RAM 1 bss build/default/debug/lcm.o
+__Lram 0 0 ABS 0 ram build/default/debug/lcm.o
+__Lsfr 0 0 ABS 0 sfr build/default/debug/lcm.o
+_lcm$0 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\lab-5.X.debug.o
+_lcm$1 3 0 COMRAM 1 cstackCOMRAM dist/default/debug\lab-5.X.debug.o
+__initialization 6B2 0 CODE 0 cinit dist/default/debug\lab-5.X.debug.o
+__Hfardata 0 0 FARRAM 0 fardata build/default/debug/lcm.o
+__Hsmallconst 602 0 SMALLCONST 0 smallconst build/default/debug/lcm.o
+__Ludata_acs 0 0 ABS 0 udata_acs build/default/debug/lcm.o
+__Lifardata 0 0 CODE 0 ifardata build/default/debug/lcm.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs build/default/debug/lcm.o
+__Hintcode 0 0 CODE 0 intcode build/default/debug/lcm.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+mytext 0 602 602 B6 1
+cstackCOMRAM 1 1 1 4 1
+reset_vec 0 0 0 4 1
+smallconst 0 600 600 2 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

@@ -1,0 +1,127 @@
+
+
+Microchip MPLAB XC8 Assembler V2.45 build 20230818022343 
+                                                                                                           Thu Oct 19 11:35:26 2023
+
+
+     1                           	processor	18F4520
+     2                           	pagewidth 132
+     3                           	opt	flic
+     4                           	psect	udata_acs,global,class=COMRAM,space=1,delta=1,lowdata,noexec
+     5                           	psect	udata_bank0,global,class=BANK0,space=1,delta=1,lowdata,noexec
+     6                           	psect	udata_bank1,global,class=BANK1,space=1,delta=1,lowdata,noexec
+     7                           	psect	udata_bank2,global,class=BANK2,space=1,delta=1,lowdata,noexec
+     8                           	psect	udata_bank3,global,class=BANK3,space=1,delta=1,lowdata,noexec
+     9                           	psect	udata_bank4,global,class=BANK4,space=1,delta=1,lowdata,noexec
+    10                           	psect	udata_bank5,global,class=BANK5,space=1,delta=1,lowdata,noexec
+    11                           	psect	udata,global,class=RAM,space=1,delta=1,noexec
+    12                           	psect	code,global,reloc=2,class=CODE,delta=1
+    13                           	psect	data,global,reloc=2,class=CONST,delta=1,noexec
+    14                           	psect	edata,global,class=EEDATA,space=3,delta=1,noexec
+    15                           	psect	mytext,local,reloc=2,class=CODE,delta=1
+    16   000000                     
+    17                           	psect	edata
+    18   000000                     stk_offset	set	0
+    19   000000                     auto_size	set	0
+    20                           
+    21                           ; stack_auto defines a symbol /name/_offset which equates to the
+    22                           ; stack offset of the auto object in question
+    23   000000                     
+    24                           ; stack_param defines a symbol /name/_offset which equates to the
+    25                           ; stack offset of the parameter object in question
+    26   000000                     
+    27                           ; alloc_stack adjusts the SP to allocate space for auto objects
+    28                           ; it also links in to the btemp symbol so that can be used
+    29   000000                     
+    30                           ; restore_stack adjusts the SP to remove all auto and parameter
+    31                           ; objects from the stack prior to returning from a function
+    32   000000                     
+    33                           	psect	mytext
+    34   000602                     _lcm:
+    35                           	callstack 0
+    36   000602  C001 F011          	movff	1,17	; copy a to 0x11
+    37   000606  C003 F013          	movff	3,19	; copy b to 0x13
+    38   00060A  6601               	tstfsz	1,c	; if a=0 or b=0 just goto end
+    39   00060C  D001               	goto	compare_high
+    40   00060E  D01B               	goto	zero_case
+    41   000610                     compare_high:
+    42   000610  5002               	movf	2,w,c
+    43   000612  6004               	cpfslt	4,c	; if 0x04<0x02 goto add b
+    44   000614  D001               	goto	equal_1
+    45   000616  D009               	goto	add_b
+    46   000618                     equal_1:
+    47   000618  6204               	cpfseq	4,c	; skip if 0x04=0x02
+    48   00061A  D00E               	goto	add_a	; this means 0x04>0x02
+    49   00061C  5001               	movf	1,w,c
+    50   00061E  6003               	cpfslt	3,c	; if 0x03<0x01 goto add b
+    51   000620  D001               	goto	equal_2
+    52   000622  D003               	goto	add_b
+    53   000624                     equal_2:
+    54   000624  6203               	cpfseq	3,c	; skip if 0x03=0x01
+    55   000626  D008               	goto	add_a	; this means 0x03>0x01
+    56   000628  0012               	return	
+    57   00062A                     add_b:
+    58   00062A  5014               	movf	20,w,c
+    59   00062C  2604               	addwf	4,f,c
+    60   00062E  5013               	movf	19,w,c
+    61   000630  2603               	addwf	3,f,c
+    62   000632  B0D8               	btfsc	status,0,c
+    63   000634  2A04               	incf	4,f,c
+    64   000636  D7EC               	goto	compare_high
+    65   000638                     add_a:
+    66   000638  5012               	movf	18,w,c
+    67   00063A  2602               	addwf	2,f,c
+    68   00063C  5011               	movf	17,w,c
+    69   00063E  2601               	addwf	1,f,c
+    70   000640  B0D8               	btfsc	status,0,c
+    71   000642  2A02               	incf	2,f,c
+    72   000644  D7E5               	goto	compare_high
+    73   000646                     zero_case:
+    74   000646  6A01               	clrf	1,c
+    75   000648  0012               	return	
+    76                           tosu	equ	0xFFF
+    77                           tosh	equ	0xFFE
+    78                           tosl	equ	0xFFD
+    79                           stkptr	equ	0xFFC
+    80                           pclatu	equ	0xFFB
+    81                           pclath	equ	0xFFA
+    82                           pcl	equ	0xFF9
+    83                           tblptru	equ	0xFF8
+    84                           tblptrh	equ	0xFF7
+    85                           tblptrl	equ	0xFF6
+    86                           tablat	equ	0xFF5
+    87                           prodh	equ	0xFF4
+    88                           prodl	equ	0xFF3
+    89                           indf0	equ	0xFEF
+    90                           postinc0	equ	0xFEE
+    91                           postdec0	equ	0xFED
+    92                           preinc0	equ	0xFEC
+    93                           plusw0	equ	0xFEB
+    94                           fsr0h	equ	0xFEA
+    95                           fsr0l	equ	0xFE9
+    96                           wreg	equ	0xFE8
+    97                           indf1	equ	0xFE7
+    98                           postinc1	equ	0xFE6
+    99                           postdec1	equ	0xFE5
+   100                           preinc1	equ	0xFE4
+   101                           plusw1	equ	0xFE3
+   102                           fsr1h	equ	0xFE2
+   103                           fsr1l	equ	0xFE1
+   104                           bsr	equ	0xFE0
+   105                           indf2	equ	0xFDF
+   106                           postinc2	equ	0xFDE
+   107                           postdec2	equ	0xFDD
+   108                           preinc2	equ	0xFDC
+   109                           plusw2	equ	0xFDB
+   110                           fsr2h	equ	0xFDA
+   111                           fsr2l	equ	0xFD9
+   112                           status	equ	0xFD8
+
+
+Microchip Technology PIC18 Macro Assembler V2.45 build 20230818022343 
+Symbol Table                                                                                               Thu Oct 19 11:35:26 2023
+
+                        _lcm 0602                         add_a 0638                         add_b 062A  
+                compare_high 0610                        STATUS 0FD8                       isa$std 0001  
+                     equal_1 0618                       equal_2 0624                     isa$xinst 0000  
+                   zero_case 0646  
