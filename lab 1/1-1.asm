@@ -1,0 +1,40 @@
+List p=18f4520
+    #include<p18f4520.inc>
+        CONFIG OSC = INTIO67
+        CONFIG WDT = OFF
+        org 0x00
+	
+	CLRF 0x00
+	CLRF 0x01
+	CLRF 0x02
+	CLRF 0x03
+	CLRF 0x10
+	CLRF 0x11
+	CLRF 0x20
+	
+	MOVLW 0x22 ;x1
+	MOVWF 0x00
+	MOVLW 0x88 ;x2
+	MOVWF 0x01 
+	ADDWF 0x00, 0, 0 ;x1+x2
+	MOVWF 0x10
+	
+	MOVLW 0xAF ;y1
+	MOVWF 0x02
+	MOVLW 0x04 ;y2
+	MOVWF 0x03
+	SUBWF 0x02, 0 ; y1-y2
+	MOVWF 0x11
+	
+	MOVLW 0x01
+	MOVWF 0x20
+	MOVF 0x10, 0, 0
+	CPFSEQ 0x11
+	GOTO ops
+	MOVLW 0xFF
+	MOVWF 0x20
+	ops:
+	    NOP
+	end
+	
+
