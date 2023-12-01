@@ -1,0 +1,42 @@
+MPLINK 5.09, LINKER
+Linker Map File - Created Thu Nov 09 21:33:34 2023
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x0000ba
+                   .cinit    romdata   0x0000ba    program   0x000002
+.config_300001_BUILD/DEFAULT/DEBUG/3C.O    romdata   0x300001    program   0x000001
+.config_300003_BUILD/DEFAULT/DEBUG/3C.O    romdata   0x300003    program   0x000001
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x0000bb      
+                            0x300001    0x300001      
+                            0x300003    0x300003      
+            190 out of 33048 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                      fin   0x0000b8    program     static C:\Users\teddy\MPLABXProjects\lab0.X\3c.asm
+                    next1   0x00009a    program     static C:\Users\teddy\MPLABXProjects\lab0.X\3c.asm
+                    next2   0x0000a4    program     static C:\Users\teddy\MPLABXProjects\lab0.X\3c.asm
+                    next3   0x0000ae    program     static C:\Users\teddy\MPLABXProjects\lab0.X\3c.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                    next1   0x00009a    program     static C:\Users\teddy\MPLABXProjects\lab0.X\3c.asm
+                    next2   0x0000a4    program     static C:\Users\teddy\MPLABXProjects\lab0.X\3c.asm
+                    next3   0x0000ae    program     static C:\Users\teddy\MPLABXProjects\lab0.X\3c.asm
+                      fin   0x0000b8    program     static C:\Users\teddy\MPLABXProjects\lab0.X\3c.asm
+
+

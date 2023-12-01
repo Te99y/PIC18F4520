@@ -1,0 +1,8 @@
+Warning[205] C:\USERS\TEDDY\MPLABXPROJECTS\LAB0.X\2-3.ASM 1 : Found directive in column 1. (List)
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB0.X\2-3.ASM 26 : Found label after column 1. (from_left)
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB0.X\2-3.ASM 30 : Found label after column 1. (check_from_left)
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB0.X\2-3.ASM 38 : Found label after column 1. (from_right)
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB0.X\2-3.ASM 42 : Found label after column 1. (check_from_right)
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB0.X\2-3.ASM 51 : Found label after column 1. (swap_from_left)
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB0.X\2-3.ASM 57 : Found label after column 1. (swap_from_right)
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB0.X\2-3.ASM 63 : Found label after column 1. (stop)

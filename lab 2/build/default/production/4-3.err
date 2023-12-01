@@ -1,0 +1,7 @@
+Warning[205] C:\USERS\TEDDY\MPLABXPROJECTS\LAB0.X\4-3.ASM 1 : Found directive in column 1. (List)
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB0.X\4-3.ASM 85 : Found label after column 1. (Fact)
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB0.X\4-3.ASM 93 : Found label after column 1. (endcase_0)
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB0.X\4-3.ASM 98 : Found label after column 1. (endcase_1)
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB0.X\4-3.ASM 106 : Found label after column 1. (endcase_n)
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB0.X\4-3.ASM 113 : Found label after column 1. (iter)
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB0.X\4-3.ASM 142 : Found label after column 1. (fin)
