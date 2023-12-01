@@ -1,0 +1,20 @@
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-3.ASM 60 : Found label after column 1. (L1)
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-3.ASM 61 : Found label after column 1. (L2)
+Warning[205] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-3.ASM 83 : Found directive in column 1. (endm)
+Warning[203] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-3.ASM 88 : Found opcode in column 1. (goto)
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-3.ASM 102 : Found label after column 1. (speed1)
+Warning[202] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-3.ASM 104 : Argument out of range.  Least significant bits used.
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-3.ASM 107 : Found label after column 1. (speed2)
+Warning[202] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-3.ASM 109 : Argument out of range.  Least significant bits used.
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-3.ASM 112 : Found label after column 1. (speed3)
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-3.ASM 117 : Found label after column 1. (choose_direction)
+Warning[202] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-3.ASM 136 : Argument out of range.  Least significant bits used.
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-3.ASM 146 : Found label after column 1. (count_up)
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-3.ASM 151 : Found label after column 1. (loop_up)
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-3.ASM 69 : Found label after column 1. (LOOP2)
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-3.ASM 72 : Found label after column 1. (LOOP1)
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-3.ASM 161 : Found label after column 1. (count_down)
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-3.ASM 167 : Found label after column 1. (loop_down)
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-3.ASM 69 : Found label after column 1. (LOOP2)
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-3.ASM 72 : Found label after column 1. (LOOP1)
+Warning[205] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-3.ASM 177 : Found directive in column 1. (end)
