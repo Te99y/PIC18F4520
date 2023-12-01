@@ -1,0 +1,19 @@
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-1.ASM 60 : Found label after column 1. (L1)
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-1.ASM 61 : Found label after column 1. (L2)
+Warning[205] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-1.ASM 83 : Found directive in column 1. (endm)
+Warning[203] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-1.ASM 88 : Found opcode in column 1. (goto)
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-1.ASM 94 : Found label after column 1. (state1)
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-1.ASM 69 : Found label after column 1. (LOOP2)
+Warning[202] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-1.ASM 70 : Argument out of range.  Least significant bits used.
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-1.ASM 72 : Found label after column 1. (LOOP1)
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-1.ASM 69 : Found label after column 1. (LOOP2)
+Warning[202] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-1.ASM 70 : Argument out of range.  Least significant bits used.
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-1.ASM 72 : Found label after column 1. (LOOP1)
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-1.ASM 106 : Found label after column 1. (state2)
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-1.ASM 69 : Found label after column 1. (LOOP2)
+Warning[202] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-1.ASM 70 : Argument out of range.  Least significant bits used.
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-1.ASM 72 : Found label after column 1. (LOOP1)
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-1.ASM 69 : Found label after column 1. (LOOP2)
+Warning[202] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-1.ASM 70 : Argument out of range.  Least significant bits used.
+Warning[207] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-1.ASM 72 : Found label after column 1. (LOOP1)
+Warning[205] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-1.ASM 131 : Found directive in column 1. (end)

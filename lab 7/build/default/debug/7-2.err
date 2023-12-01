@@ -1,0 +1,3 @@
+Warning[203] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-2.ASM 60 : Found opcode in column 1. (goto)
+Warning[202] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-2.ASM 93 : Argument out of range.  Least significant bits used.
+Warning[205] C:\USERS\TEDDY\MPLABXPROJECTS\LAB6.X\7-2.ASM 100 : Found directive in column 1. (end)
