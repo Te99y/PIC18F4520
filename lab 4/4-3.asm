@@ -82,15 +82,6 @@ List p=18f4520
 	MOVLW 0x03; k
 	MOVWF 0x0B
 	
-	
-;	ORG 0x20
-;	DW 0702H, 123FH, 1110H, 2021H
-;	MOVLW 1
-;	MOVWF 0x00
-;	NEGF 0x00
-;	MOVWF 0x01
-;	ADDWF 0x00, 1
-	
 	RCALL Fact
 	goto fin
 	
