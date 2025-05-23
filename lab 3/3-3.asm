@@ -3,24 +3,14 @@ List p=18f4520
         CONFIG OSC = INTIO67
         CONFIG WDT = OFF
         org 0x00
-	
-;	MOVLW 0x08
-;	MOVWF TRISA
-;	SWAPF TRISA; mov to higher bits so i can add it to TRISC, since the value is 0x0? i can just swap 0 and ?
-;	MOVLW 0x0B
-;	MOVWF TRISB
-;	MOVWF TRISC; optimized, so actually there's no reason to use 3 regs
-	
+
+
 	MOVLW 0x03
 	MOVWF TRISA
 	SWAPF TRISA; mov to higher bits so i can add it to TRISC, since the value is 0x0? i can just swap 0 and ?
 	MOVLW 0x0F
 	MOVWF TRISB
 	MOVWF TRISC; optimized, so actually there's no reason to use 3 regs
-	
-	
-	
-	
 	
 	LFSR 0, 0x05; use as counter, we need to run 4 times
 	loop:
